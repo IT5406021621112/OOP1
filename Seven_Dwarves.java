@@ -1,26 +1,35 @@
 import java.util.Scanner;
-
-class Seven_Dwarves {
-	public static void main(String[] args) {
+ 
+ class Seven_Dwarves {
+ 	static int num1,num2,num3,num4,num5,num6,num7,num8,num9;
+	public static void main(String[] args) 
+	{
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Input num1 : ");
-		int num1 = scan.nextInt();
+		num1 = scan.nextInt();
 		System.out.print("Input num2 : ");
-		int num2 = scan.nextInt();
+		num2 = scan.nextInt();
 		System.out.print("Input num3 : ");
-		int num3 = scan.nextInt();
+		num3 = scan.nextInt();
 		System.out.print("Input num4 : ");
-		int num4 = scan.nextInt();
+		num4 = scan.nextInt();
 		System.out.print("Input num5 : ");
-		int num5 = scan.nextInt();
+		num5 = scan.nextInt();
 		System.out.print("Input num6 : ");
-		int num6 = scan.nextInt();
+		num6 = scan.nextInt();
 		System.out.print("Input num7 : ");
-		int num7 = scan.nextInt();
+		num7 = scan.nextInt();
 		System.out.print("Input num8 : ");
-		int num8 = scan.nextInt();
+		num8 = scan.nextInt();
 		System.out.print("Input num9 : ");
-		int num9 = scan.nextInt();
+		num9 = scan.nextInt();
+
+		Seven_Dwarves obj1 = new Seven_Dwarves();
+		obj1.Cal(num1,num2,num3,num4,num5,num6,num7,num8,num9);
+		
+	}
+	public static void Cal (int num1,int num2,int num3,int num4,int num5,int num6,int num7,int num8,int num9)
+	{
 		if (num1 + num2 + num3 + num4 + num5 + num6 + num7 == 100) {
 			System.out.println(num1);
 			System.out.println(num2);

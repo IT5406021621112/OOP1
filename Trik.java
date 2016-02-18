@@ -2,11 +2,14 @@ import java.util.Scanner;
 import java.io.*;
 
 public class Trik {
+	static boolean glass1 = true, glass2 = false, glass3 = false;
+	static String plan = "";
+
 	public static void main(String[] args) {
-		String plan = "";
+		
 		char[] planChar;
 		boolean flagOver = true;
-		boolean glass1 = true, glass2 = false, glass3 = false;
+		
 		Scanner scan = new Scanner(System.in);
 
 		while (flagOver) {
@@ -23,6 +26,17 @@ public class Trik {
 			}
 		}
 
+		Trik obj1 = new Trik();
+		obj1.starts(glass1,glass2,glass3);
+		obj1.Display(glass1,glass2,glass3);
+
+		
+		
+
+	}
+
+	public static void starts ( boolean glass1, boolean glass2, boolean glass3)
+	{
 		for (int i = 0; i < plan.length(); i++) {
 			if (plan.charAt(i) == 'A') {
 				boolean temp;
@@ -44,6 +58,9 @@ public class Trik {
 
 			}
 		}
+	}
+	public void Display( boolean glass1, boolean glass2, boolean glass3)
+	{
 		if (glass1) {
 			System.out.println("Ball in glass 1");
 		} else if (glass2) {
@@ -51,7 +68,6 @@ public class Trik {
 		} else if (glass3) {
 			System.out.println("Ball in glass 3");
 		}
-
 	}
 
 	public static boolean CheckABC(String str) {
